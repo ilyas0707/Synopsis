@@ -300,6 +300,10 @@
     display: flex;
 }
 
+.scene_item.active {
+    width: 100%;
+}
+
 .scene_logo {
     padding: 34px 40px 80px 40px;
 }
