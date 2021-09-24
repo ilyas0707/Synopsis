@@ -12,8 +12,8 @@
 <body>
 
     <div class="scene">
-        <div class="scene_menu">
-            <div class="scene_logo">
+        <div class="scene_menu" id="menu">
+            <div class="scene_logo closed">
                 <a href="#"><img src="./assets/icons/logo.png" alt="logo"></a>
             </div>
             <nav class="scene_nav">
@@ -21,43 +21,43 @@
                     <li class="scene_list">
                         <a href="#">
                             <img src="./assets/icons/dashboard.png" alt="dashboard">
-                            Dashboard
+                            <span class="closed">Dashboard</span>
                         </a>
                     </li>
                     <li class="scene_list">
                         <a href="#">
                             <img src="./assets/icons/trips.png" alt="trips">
-                            Trips
+                            <span class="closed">Trips</span>
                         </a>
                     </li>
                     <li class="scene_list">
                         <a href="#">
                             <img src="./assets/icons/history.png" alt="history">
-                            History
+                            <span class="closed">History</span>
                         </a>
                     </li>
                     <li class="scene_list">
                         <a href="#">
                             <img src="./assets/icons/expenses.png" alt="expenses">
-                            Expenses
+                            <span class="closed">Expenses</span>
                         </a>
                     </li>
                     <li class="scene_list">
                         <a href="#">
                             <img src="./assets/icons/invoices.png" alt="invoices">
-                            Invoices
+                            <span class="closed">Invoices</span>
                         </a>
                     </li>
                     <li class="scene_list">
                         <a href="#">
                             <img src="./assets/icons/travel_data.png" alt="travel_data">
-                            Travel Data
+                            <span class="closed">Travel Data</span>
                         </a>
                     </li>
                 </ul>
             </nav>
 
-            <div class="scene_call">
+            <div class="scene_call closed">
                 <div class="scene_contacts">
                     <h3>
                         <img src="./assets/icons/phone.png" alt="phone">
@@ -79,13 +79,13 @@
 
             <div class="scene_collapse">
                 <label class="scene_switch">
-                    <input type="checkbox">
-                    <span class="scene_slider round"></span>
+                    <input type="checkbox" id="checkbox">
+                    <span class="scene_slider round" id="slider"></span>
                 </label>
-                <p>Collapse Menu</p>
+                <p class="closed">Collapse Menu</p>
             </div>
 
-            <p class="scene_copyright">
+            <p class="scene_copyright closed">
                 © 2020 All Rights Reserved Antaeus Travel Group®
             </p>
         </div>
@@ -116,8 +116,9 @@
                         <div class="main_topline">
                             <div>
                                 <p class="main_count">In action:<span>120</span></p>
-                                <div class="main_filter">
-                                    <input type="radio" name="filter" id="filter">
+                                <div class="main_filter checkbox">
+                                    <input type="checkbox" name="filter" id="roundedOne">
+                                    <span></span>
                                     <p>Show only closed expenses</p>
                                 </div>
                             </div>
