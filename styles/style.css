@@ -168,6 +168,10 @@
     color: #8b86a8;
 }
 
+.main_title > h3:last-child {
+    margin-left: 40px;
+}
+
 .main_title > h3 > span {
     margin-left: 10px;
 }
@@ -190,6 +194,7 @@
 
 .main_amount {
     display: flex;
+    justify-content: flex-end;
 }
 
 .main_budget {
@@ -290,6 +295,11 @@
     padding: 10px 15px;
     border-radius: 5px;
     box-shadow: 0px 0px 3px 0px rgba(172, 158, 245, 0.43);
+    transition: all .3s;
+}
+
+.main_pages > button:hover {
+    box-shadow: 0px 0px 10px 5px rgba(172, 158, 245, 0.23);
 }
 
 .main_next > img {
@@ -1576,4 +1586,99 @@ input:checked + .scene_slider:before {
 .checkbox > input:checked {
     border: 1px solid #4729db;
     background-color: #4729db;
+}
+
+.modal_request {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 5;
+}
+
+.overlay {
+    background-color: rgba(255, 255, 255, .9);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.request_main {
+    width: 665px;
+    padding: 40px;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 0px 5px 0px rgba(172, 158, 245, 0.23);
+}
+
+.main_item.fixed {
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.main_title.fixed {
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.modal_request.active {
+    display: grid;
+    place-items: center;
+}
+
+.request_title {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.request_title > p {
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+}
+
+.request_title > p > span {
+    color: #c2bfce;
+}
+
+.request_title > p > span > span {
+    color: #4729db;
+}
+
+.request_form {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.request_form > input {
+    width: 60%;
+    padding: 16px 25px;
+    border-radius: 10px;
+    text-transform: uppercase;
+    border: 1px solid #e4e4e4;
+}
+
+.request_form > p {
+    width: 10%;
+    text-transform: uppercase;
+    color: #c2bfce;
+    text-align: center;
+}
+
+.request_form > button {
+    width: 30%;
+    padding: 17px 0;
+    border-radius: 10px;
+    background: #4729db;
+    color: #fff;
+}
+
+.main_title > h3 {
+    font-weight: normal;
+    font-size: 12px;
 }
