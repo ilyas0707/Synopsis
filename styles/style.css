@@ -381,7 +381,7 @@
 }
 
 .scene_menu.active .scene_changed > a > img {
-    margin-right: 0;
+    margin-right: 0 !important;
 }
 
 .scene_call {
@@ -1021,6 +1021,12 @@ input:checked + .scene_slider:before {
     grid-template-columns: repeat(7, 1fr);
     column-gap: 70px;
     margin-bottom: 40px;
+}
+
+.list_grid {
+    max-height: 0;
+    overflow: hidden; 
+    transition: max-height 0.5s ease-out;
 }
 
 .list_title > h3 {
@@ -1692,4 +1698,60 @@ input:checked + .scene_slider:before {
 .main_title > h3 {
     font-weight: normal;
     font-size: 12px;
+}
+
+.modal_body {
+    padding: 0 100px 50px 100px;
+}
+
+.modal_main {
+    border: #e4e4e4 1px solid;
+    padding: 50px;
+    border-radius: 10px;
+}
+
+.modal_main > h3 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+.modal_main > p {
+    font-size: 30px;
+    color: #4e2df1;
+    margin-bottom: 40px;
+}
+
+.modal_main > p > span {
+    font-size: 10px;
+    color: #ada9c3;
+}
+
+.modal_main > ul {
+    margin-bottom: 20px;
+    padding-bottom: 40px;
+    border-bottom: #e5e5e5 1px solid;
+}
+
+.modal_main > ul > li {
+    margin-bottom: 7px;
+}
+
+.modal_main > ul > li > img {
+    margin-right: 7px;
+}
+
+.modal_lug > p {
+    display: flex;
+    align-items: center;
+}
+
+.modal_lug > p:first-child {
+    margin-bottom: 10px;
+}
+
+.modal_lug > p > img {
+    margin-right: 10px;
 }
